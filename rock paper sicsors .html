@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roock paper scisors</title>
+    <link rel="stylesheet" href="stylle.css">
+</head>
+<body>
+    <h1>rock paper scisors</h1>
+    <div class="button-container"><button onclick="
+    let computerchoice='';
+    let random= Math.random();
+    let userchoice='rock';
+    let result='';
+    if(random<1/3){
+        computerchoice='rock';
+    }else if (random<2/3){
+        computerchoice='paper';
+    }else {
+        computerchoice='scissors'
+    }
+    if(computerchoice===userchoice){
+        result=' draw';
+    }else if(computerchoice==='paper'){
+        result=' you lose';
+    }else {
+        result=' you win';
+    }
+    console.log('computer choice:', computerchoice);
+    console.log('user choice:', userchoice);
+    console.log('result:', result);
+    alert('computer choice: ' + computerchoice + '\nyou choice: ' + userchoice + '\nresult: ' + result);
+    ">rock</button>
+    <button id="paper"
+    onclick="
+    let computerchoice='';
+    let userchoice='paper';
+    let result='';
+    let random= Math.random();
+    if(random<1/3){
+        computerchoice='rock';
+    }else if (random<2/3){
+        computerchoice='paper';
+    }else {
+        computerchoice='scissors'
+    }
+    if(computerchoice===userchoice){
+        result=' draw';
+    }else if(computerchoice==='scissors'){
+        result=' you lose';
+    }else {
+        result=' you win';
+    }
+    console.log('computer choice:', computerchoice);
+    console.log('user choice:', userchoice);
+    console.log('result:', result);
+    alert('computer choice: ' + computerchoice + '\nyou choice: ' + userchoice + '\nresult: ' + result);
+    ">paper</button>
+    <button id="scissors"
+    onclick="
+    let computerchoice='';
+    let random= Math.random();
+    let userchoice='scissors';
+    let result='';
+    if(random<1/3){
+        computerchoice='rock';
+    }else if (random<2/3){
+        computerchoice='paper';
+    }else {
+        computerchoice='scissors'
+    }
+    if(computerchoice===userchoice){
+        result=' draw';
+    }else if(computerchoice==='rock'){
+        result=' you lose';
+    }else {
+        result=' you win';
+    }
+    console.log('computer choice:', computerchoice);
+    console.log('user choice:', userchoice);
+    console.log('result:', result);
+    alert('computer choice: ' + computerchoice + '\nyou choice: ' + userchoice + '\nresult: ' + result);
+    ">scissors</button>
+    </div>
+
+</body>
+</html>
